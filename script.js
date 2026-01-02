@@ -266,7 +266,7 @@ class MinesweeperGame {
             this.revealAllMines();
         }, 500);
         
-        this.gameMessage.textContent = 'BOOM! Game Over!';
+        this.gameMessage.textContent = 'Вы, сопротивляясь, достаёте монокль из кармана и надеваете его на правый глаз.';
         this.gameMessage.className = 'game-message lose';
         
         anime({
@@ -314,7 +314,7 @@ class MinesweeperGame {
             this.gameActive = false;
             this.stopTimer();
             
-            this.gameMessage.textContent = '🎉 Congratulations! You Win! 🎉';
+            this.gameMessage.textContent = 'Вы не стали Амоном';
             this.gameMessage.className = 'game-message win';
             
             anime({
